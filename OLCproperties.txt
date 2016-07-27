@@ -10,11 +10,7 @@
 # Nastaveni konektivity do databaze OLC
 #
 # Vyznam parametru:
-# -----------------
-# - IPF.db - pripojovaci retezec do databaze OLC
-# - OLC.OLC_OWN.user - jmeno vlastnika DB objektu OLC
-# - OLC.OLC_OWN.password - heslo vlastnika DB objektu OLC
-# - OLC.OLC_APP.user - jmeno aplikacniho uzivatele DB objektu OLC
+
 # - OLC.OLC_APP.password - heslo aplikacniho uzivatele DB objektu OLC
 # - OLC.DB.Users - seznam databazovych uzivatelu v OLC, slouzi pro kontrolu prostredi
 # - OLC.DB.Tablespaces - seznam tablespace v OLC, slouzi pro kontrolu prostredi
@@ -22,15 +18,6 @@
 OLC.db=OLC
 OLC.DB.InstanceList=OLC1,OLC2,OLC3,OLC4
 OLC.DB.Users=OLC_OWN,BSSF_USR,WSC_USR,GOLDEN_USR
-OLC.DB.Tablespaces=OLCDATA,OLCIDX
-OLC.OLC_OWN.user=OLC_OWN
-OLC.OLC_OWN.password=OLC_OWN
-OLC.OLC_OWN.tblspace=OLCDATA
-OLC.BSSF_USR.user=BSSF_USR
-OLC.BSSF_USR.password=BSSF_USR
-OLC.BSSF_USR.tblspace=OLCDATA
-OLC.WSC_USR.user=WSC_USR
-OLC.WSC_USR.password=WSC_USR
 OLC.WSC_USR.tblspace=OLCDATA
 OLC.GOLDEN_USR.user=GOLDEN_USR
 OLC.GOLDEN_USR.password=GOLDEN_USR
@@ -57,4 +44,7 @@ OLC.EXT_TAB_DIRECTORY=plna cesta do souboru ./db/UPGRADE/_post/SYS
 #=========================================
 ENV_TYPE=PROD
 
-
+  # - ENV_NASTAVENI - nazev souboru s parametry aplikace OLC
+# - VZPOLC_ENV - soubor s nastavenim prostredi
+# - c_directory_path - sesta, kam se provadi export/import pri vytvareni/obnove zalohy [puzijte znak # namisto /]
+# - c_schema_filter - jmeno schematu,
